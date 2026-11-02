@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact TSM Math Club for Grade 11 and 12 mathematics tutoring enquiries.">
+    <meta name="keywords" content="TSM Math Club, maths tutoring enquiries, registration."> 
+    <title>Enquiry-TSM Math Club</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+</head>
+<body>
+     <!-- Header and navigation-->
+ <header>
+    <div class="brand">
+         <h1>TSM Math Club</h1>
+         <img src="Untitled design_20260827_124138_0000.png">
+   
+   </div>
+    
+            <!-- Navigation Bar -->
+       <nav>
+            <a href="index.html">⌂Home</a>
+            <a href="about.html">ⓘAbout</a>
+            <a href="services.html">▣Services</a>
+            <a href="resources.html">▤Resources</a>
+            <a href="enquiry.html" class="current">✎Enquiry</a>
+            <a href="Enrol.html">✎Enrol Now</a>
+            <a href="contact.html">☎ Contact</a>
+             
+        </nav>
+ </header>
+  <!-- Enquiry  Page-->
+   <main>
+    <h2>Make an Enquiry about TSM Math Club Mathematics tutoring</h2>
+    <p>Have question about TSM Math Club? <br>
+    Enquire about our Grade 11 and Grade 12 mathematics lessons, registration and packages</p>
+     <!-- Enquiry Form-->
+      <form id="enquiryForm" novalidate>
+       
+        <div class="form-logo">
+            <img src="Untitled design_20260827_124138_0000.png">
+        </div>
+        <table>
+            <tr>
+        <td><label for="name">Full name:</label></td>
+       <td> <input type="text" id="name" name="name" required></td>
+            </tr>
+        <br>
+        <tr>
+        <td><label for="email">Email Address:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <br>
+        <tr>
+        <td><label for="phone">Telephone:</label></td>
+        <td><input
+    type="tel"
+    id="phone"
+    name="phone"
+    placeholder="+27XXXXXXXXX"
+    pattern="\+27[0-9]{9}"
+    maxlength="12"
+    minlength="12"
+    title="Enter a South African number starting with +27 followed by 9 digits"
+    required>
+            </td>
+        </tr>
+        <br>
+        <tr>
+       <td> <label for="grade">Grade:</label></td>
+       <td>
+        <select id="grade" name="grade" required>
+            <option value=""> Select your grade</option>
+            <option value="Grade 11">Grade 11</option>
+            <option value="Grade 12">Grade 12</option>
+        </select>
+        </td>
+        </tr>
+        <br>
+        <tr>
+        <td><label for="enquiry-type">Enquiry-type</label> <br></td>
+        <td>
+        <select id="enquiry-type"name="enquiry-type" required>
+            <option value="">--select an option--</option>
+            <option value="Sunday Lessons">Sunday Lesson</option>
+            <option value="Registration">Registration</option>
+            <option value="Resources">Resources</option>
+            <option value="General">General Enquiry</option>
+            <option value="Premium Package">Premium package</option>
+        </select> 
+        </td>
+        </tr>
+        <br>
+        <tr>
+            <td></td>
+            <td>
+        <button type="submit">Submit Enquiry</button>
+        </td>
+        </tr>
+        </table>
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+         <!-- Footer-->
+       <footer >
+            <p>&copy; 2026 TSM Math Club. All Rights Reserved.</p>
+       </footer>
+      </form>
+   </main>
+    
+</body>
+</html>

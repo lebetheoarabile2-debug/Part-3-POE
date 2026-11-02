@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Enrol at TSM Math Club for Grade 11 and 12" mathematics tutoring in Mahikeng>
+     <meta name="keywords" content="contact, mathematics tutoring, Mahikeng">
+    <title>Student Enrolment - TSM Math Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Header and navigation-->
+ <header>
+    <div class="brand">
+         <h1>TSM Math Club</h1>
+         <img src="Untitled design_20260827_124138_0000.png">
+   
+   </div>
+    
+            <!-- Navigation Bar -->
+       <nav>
+            <a href="index.html">⌂Home</a>
+            <a href="about.html">ⓘAbout</a>
+            <a href="services.html">▣Services</a>
+            <a href="resources.html">▤Resources</a>
+            <a href="enquiry.html">✎Enquiry</a>
+            <a href="Enrol.html" class="current">✎Enrol Now</a>
+            <a href="contact.html">☎ Contact</a>
+            
+        </nav>
+ </header>
+
+  <section class="enrol-hero">
+        <div class="enrol-container">
+           
+            <h1>Enrol for Grade 11 and 12 mathematics tutoring</h1>
+            <p>Join TSM Math Club and take the next step towards improving your mathematics skills.</p>
+        </div>
+    </section>
+
+    <main class="enrol-container enrol-main">
+
+        <form id="studentEnrolmentForm" novalidate>
+
+            <!-- Student details -->
+            <section class="enrol-card">
+                <div class="enrol-section-heading">
+                    <span class="enrol-number">01</span>
+                    <div>
+                        <h2>Student Information</h2>
+                        <p>Please provide the student's details.</p>
+                    </div>
+                </div>
+
+                <div class="enrol-form-grid">
+
+                    <div class="enrol-field enrol-full-field">
+                        <label>Student Full Name <span>*</span></label>
+                        <div class="enrol-name-grid">
+                            <div>
+                                <input type="text" id="studentFirstName"
+                                    placeholder="First Name" required>
+                                <small>First Name</small>
+                            </div>
+                            <div>
+                                <input type="text" id="studentLastName"
+                                    placeholder="Last Name" required>
+                                <small>Last Name</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="enrol-field">
+                        <label for="dateOfBirth">Date of Birth <span>*</span></label>
+                        <input type="date" id="dateOfBirth" required>
+                        <small>Date</small>
+                    </div>
+
+                    <div class="enrol-field enrol-full-field">
+                        <label>Parent/Guardian Full Name <span>*</span></label>
+                        <div class="enrol-name-grid">
+                            <div>
+                                <input type="text" id="guardianFirstName"
+                                    placeholder="First Name" required>
+                                <small>First Name</small>
+                            </div>
+                            <div>
+                                <input type="text" id="guardianLastName"
+                                    placeholder="Last Name" required>
+                                <small>Last Name</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="enrol-field">
+                        <label for="contactEmail">Contact Email <span>*</span></label>
+                        <input type="email" id="contactEmail"
+                            placeholder="example@email.com" required>
+                        <small>example@example.com</small>
+                    </div>
+
+                    <div class="enrol-field">
+                        <label for="contactPhone">Contact Phone Number <span>*</span></label>
+                        <input type="tel" id="contactPhone"
+                            placeholder="Enter phone number"
+                            pattern="[0-9 +()-]{7,20}" required>
+                        <small>Please enter a valid phone number.</small>
+                    </div>
+
+                    <div class="enrol-field">
+                        <label for="studentGrade">Grade <span>*</span></label>
+                        <select id="studentGrade" required>
+                            <option value="">Select Grade</option>
+                            <option value="Grade 11">Grade 11</option>
+                            <option value="Grade 12">Grade 12</option>
+                        </select>
+                    </div>
+
+                    <div class="enrol-field">
+                        <label for="studentSubject">Subject <span>*</span></label>
+                        <select id="studentSubject" required>
+                            <option value="">Select Subject</option>
+                            <option value="Mathematics">Mathematics</option>
+                            
+                        </select>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Package selection -->
+            <section class="enrol-card">
+                <div class="enrol-section-heading">
+                    <span class="enrol-number">02</span>
+                    <div>
+                        <h2>Choose Your Package</h2>
+                        <p>Select the tutoring package you would like to enrol for.</p>
+                    </div>
+                </div>
+
+                <div class="enrol-package-grid">
+
+                    <label class="enrol-package">
+                        <input type="radio" name="package" value="Standard" data-price="300" required>
+                        <span class="enrol-package-content">
+                            <strong>Standard Package</strong>
+                            <span class="enrol-price">R300</span>
+                            <small>Structured mathematics support and learning resources.</small>
+                        </span>
+                    </label>
+
+                    <label class="enrol-package">
+                        <input type="radio" name="package" value="Premium" data-price="500">
+                        <span class="enrol-package-content">
+                            <strong>Premium Package</strong>
+                            <span class="enrol-price">R500</span>
+                            <small>Extended learning support and additional practice resources.</small>
+                        </span>
+                    </label>
+
+                </div>
+
+                <div class="enrol-total">
+                    <span>Selected package amount</span>
+                    <strong id="packageAmount">R0.00</strong>
+                </div>
+            </section>
+
+            <!-- Payment selection -->
+            <section class="enrol-card">
+                <div class="enrol-section-heading">
+                    <span class="enrol-number">03</span>
+                    <div>
+                        <h2>Choose Payment Method</h2>
+                        <p>Select how you would like to pay.</p>
+                    </div>
+                </div>
+
+                <div class="enrol-payment-options">
+
+                    <label class="enrol-payment-option">
+                        <input type="radio" name="paymentMethod" value="bank" required>
+                        <span>
+                            <strong><span class="payment-symbol">▤</span> Bank Transfer / EFT</strong>
+                            <small>Pay directly into the club's bank account.</small>
+                        </span>
+                    </label>
+
+                    <label class="enrol-payment-option">
+                        <input type="radio" name="paymentMethod" value="card">
+                        <span>
+                            <strong><span class="payment-symbol">▣</span> Card Payment</strong>
+                            <small> card payment option.</small>
+                        </span>
+                    </label>
+
+                </div>
+
+                <!-- Bank transfer details -->
+                <div id="bankPaymentDetails" class="payment-panel" hidden>
+                    <h3>Bank Transfer / EFT Details</h3>
+
+                    <div class="demo-warning">
+                        <strong>Banking details</strong>
+                       
+                    </div>
+
+                    <div class="enrol-bank-row">
+                        <span>Bank</span>
+                        <strong>FNB </strong>
+                    </div>
+                    <div class="enrol-bank-row">
+                        <span>Account holder</span>
+                        <strong>TSM Math Club</strong>
+                    </div>
+                    <div class="enrol-bank-row">
+                        <span>Account number</span>
+                        <strong>00000000000</strong>
+                    </div>
+                    <div class="enrol-bank-row">
+                        <span>Account type</span>
+                        <strong>Cheque Account</strong>
+                    </div>
+                    <div class="enrol-bank-row">
+                        <span>Branch code</span>
+                        <strong>067930</strong>
+                    </div>
+                    <div class="enrol-bank-row">
+                        <span>Payment reference</span>
+                        <strong id="bankReference">Student Full Name</strong>
+                    </div>
+
+                    <button type="button" id="copyBankDetails" class="enrol-copy">
+                        Copy Bank Details
+                    </button>
+                    <p id="bankCopyMessage" class="payment-feedback" aria-live="polite"></p>
+
+                   
+                    </label>
+                </div>
+
+                <!-- Card payment demonstration -->
+                <div id="cardPaymentDetails" class="payment-panel" hidden>
+                    <h3>Card Payment</h3>
+
+                    <div class="demo-warning">
+                        <strong> Card payment</strong>
+                       
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-card-top">
+                            <strong>TSM MATH CLUB</strong>
+                            <span>DEMO</span>
+                        </div>
+                        <div class="demo-card-number">•••• •••• •••• ••••</div>
+                        <div class="demo-card-bottom">
+                            <span>CARD PAYMENT </span>
+                            <strong>R <span id="cardAmount">0.00</span></strong>
+                        </div>
+                    </div>
+
+                    <p class="card-demo-note">
+                        Confirm your card payment selection below.
+                       
+                    </p>
+
+                    <label class="enrol-paid-check">
+                        <input type="checkbox" id="cardAcknowledgement">
+                        I confirm my card Payment selection.
+                       
+                    </label>
+                </div>
+
+                <button type="submit" id="completeEnrolment" class="enrol-submit">
+                    Complete Enrolment →
+                </button>
+
+                <p id="enrolMessage" class="enrol-message" role="status" aria-live="polite"></p>
+
+            </section>
+
+        </form>
+
+    </main>
+
+    <footer class="enrol-footer">
+        <div class="enrol-container">
+            <h3>TSM Math Club</h3>
+            <p>Building confidence. Developing mathematical skills.</p>
+            <p>&copy; 2026 TSM Math Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
+</body>
+</html>
